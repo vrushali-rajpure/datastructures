@@ -1,3 +1,5 @@
+package graphs;
+import graphs.GraphBFS;
 import org.junit.Test;
 
 public class GraphBFSTest {

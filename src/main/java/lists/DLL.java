@@ -1,4 +1,4 @@
-import static java.lang.Integer.MIN_VALUE;
+package lists;
 
 class DLLNode {
     int data;
@@ -56,7 +56,7 @@ public class DLL {
     }
 
     @Override public String toString() {
-        return "DLL{" +
+        return "lists.DLL{" +
             "head=" + head +
             ",\n tail=" + tail +
             ",\n length=" + length +
@@ -90,7 +90,7 @@ public class DLL {
 
     DLLNode deleteFirst() {
         if( length == 0) {
-            throw  new RuntimeException("empty DLL");
+            throw  new RuntimeException("empty lists.DLL");
         }
         DLLNode temp = head;
         head = head.next;
@@ -110,7 +110,7 @@ public class DLL {
 
     DLLNode deleteLast() {
         if( length == 0) {
-            throw  new RuntimeException("empty DLL");
+            throw  new RuntimeException("empty lists.DLL");
         }
         DLLNode temp = tail;
         tail = tail.previous;

@@ -1,6 +1,6 @@
-import org.junit.Test;
+package lists;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 public class LinkedListTest {
 
@@ -12,11 +12,11 @@ public class LinkedListTest {
         list.insertAtEnd(20);
         list.insertAtEnd(30);
 
-        list.insertAtMiddle(25,2);
+        list.insertAtMiddle(25, 2);
 //
-        list.insertAtMiddle(26,4);
+        list.insertAtMiddle(26, 4);
 //
-        list.insertAtMiddle(5,0);
+        list.insertAtMiddle(5, 0);
 //
         list.removeFirst();
 

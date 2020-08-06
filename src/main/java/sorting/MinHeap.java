@@ -1,4 +1,4 @@
-// Java program to connect n ropes with minimum cost 
+package sorting;// Java program to connect n ropes with minimum cost
 
 // A class for Min Heap 
 class MinHeap { 

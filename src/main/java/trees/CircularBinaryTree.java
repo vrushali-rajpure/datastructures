@@ -1,4 +1,4 @@
-/* Java program to search an element 
+package trees;/* Java program to search an element
 in a sorted and pivoted array*/
 
 class CircularBinaryTree {

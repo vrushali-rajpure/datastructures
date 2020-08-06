@@ -1,3 +1,5 @@
+package graphs;
+import graphs.GraphDFS;
 import org.junit.Test;
 
 public class GraphDFSTest {

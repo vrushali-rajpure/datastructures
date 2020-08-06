@@ -1,3 +1,5 @@
+package lists;
+import lists.DLL;
 import org.junit.Test;
 
 public class DLLTest {

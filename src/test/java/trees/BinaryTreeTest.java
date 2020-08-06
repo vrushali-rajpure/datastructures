@@ -1,6 +1,8 @@
-import org.junit.Test;
+package trees;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
+import trees.BinaryTree;
+import trees.BinaryTreeNode1;
 
 public class BinaryTreeTest {
 

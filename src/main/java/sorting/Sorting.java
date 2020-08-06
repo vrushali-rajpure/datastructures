@@ -1,3 +1,5 @@
+package sorting;
+
 public class Sorting {
 
     static void printArray(int arr[]) {

@@ -1,3 +1,5 @@
+package sorting;
+
 /* Java program for Merge Sort */
 class MergeSort {
     /* A utility function to print array of size n */

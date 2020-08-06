@@ -1,10 +1,12 @@
+package trees;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class BinarySearchTree {
 
-    static void levelOrderTraversal(BinaryTreeNode root) {
+    public static void levelOrderTraversal(BinaryTreeNode root) {
         Queue<BinaryTreeNode> queue = new LinkedList<>();
         queue.offer(root);
         queue.offer(null);
@@ -40,7 +42,7 @@ public class BinarySearchTree {
         System.out.println(result);
     }
 
-    static BinaryTreeNode constructTreeFromPreAndInorderExpression(int[] pre, int[] in) {
+    public static BinaryTreeNode constructTreeFromPreAndInorderExpression(int[] pre, int[] in) {
         if (pre.length == 0 || in.length != pre.length) {
             return null;
         }
@@ -106,7 +108,7 @@ public class BinarySearchTree {
         return node;
     }
 
-    static void inorder(BinaryTreeNode root)
+    public static void inorder(BinaryTreeNode root)
     {
         if (root == null)
             return;
@@ -115,7 +117,7 @@ public class BinarySearchTree {
         inorder(root.right);
     }
 
-    static BinaryTreeNode mirror(BinaryTreeNode root) {
+    public static BinaryTreeNode mirror(BinaryTreeNode root) {
         if( root == null) {
             return null;
         }

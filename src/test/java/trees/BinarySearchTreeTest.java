@@ -1,4 +1,8 @@
+package trees;
+
 import org.junit.Test;
+import trees.BinarySearchTree;
+import trees.BinaryTreeNode;
 
 public class BinarySearchTreeTest {
 

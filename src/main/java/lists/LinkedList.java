@@ -1,3 +1,5 @@
+package lists;
+
 class ListNode {
     private int data;
     private ListNode next;
@@ -36,7 +38,7 @@ public class LinkedList {
     }
 
     @Override public String toString() {
-        return "LinkedList{" +
+        return "lists.LinkedList{" +
             "headNode=" + headNode +
             ", length=" + length +
             '}';
