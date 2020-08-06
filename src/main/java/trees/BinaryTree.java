@@ -2,22 +2,22 @@ package trees;
 
 import java.util.Stack;
 
-class BinaryTreeNode1 {
-    char ch;
-    BinaryTreeNode1 left, right;
-
-    public BinaryTreeNode1(char ch) {
-        this.ch = ch;
-    }
-
-    @Override public String toString() {
-        return "{" +
-            "ch=" + ch +
-            ", left=" + left.ch +
-            ", right=" + right.ch +
-            '}';
-    }
-}
+//class BinaryTreeNode1 {
+//    char ch;
+//    BinaryTreeNode1 left, right;
+//
+//    public BinaryTreeNode1(char ch) {
+//        this.ch = ch;
+//    }
+//
+//    @Override public String toString() {
+//        return "{" +
+//            "ch=" + ch +
+//            ", left=" + left.ch +
+//            ", right=" + right.ch +
+//            '}';
+//    }
+//}
 
 public class BinaryTree {
 
@@ -25,13 +25,13 @@ public class BinaryTree {
         return (ch == '+' || ch == '-' || ch == '/' || ch == '*' || ch == '^');
     }
 
-    static BinaryTreeNode1 buildExpressionTreeFromPostFix(char[] postfixExpr, int size) {
+    static BinaryTreeNode buildExpressionTreeFromPostFix(char[] postfixExpr, int size) {
 
-        Stack<BinaryTreeNode1> stack = new Stack<>();
+        Stack<BinaryTreeNode> stack = new Stack<>();
         for (final char ch : postfixExpr) {
-            BinaryTreeNode1 node = new BinaryTreeNode1(ch);
+            BinaryTreeNode node = new BinaryTreeNode(ch);
             if (isOperator(ch)) {
-                BinaryTreeNode1 right = stack.pop();
+                BinaryTreeNode right = stack.pop();
                 node.left = stack.pop();
                 node.right = right;
             }

@@ -2,13 +2,10 @@ package trees;
 
 import org.junit.Test;
 
-public class BinarySearchTreeTest {
-
-
-
-
+public class LevelOrderTraversalTest {
     @Test
-    public void mirror() {
+    public void levelOrderTraversal() {
+
         BinaryTreeNode node5 = new BinaryTreeNode(5, null, null);
         BinaryTreeNode node4 = new BinaryTreeNode(4, null, null);
         BinaryTreeNode node6 = new BinaryTreeNode(6, null, null);
@@ -16,11 +13,8 @@ public class BinarySearchTreeTest {
         BinaryTreeNode node3 = new BinaryTreeNode(3, node6, null);
         BinaryTreeNode root = new BinaryTreeNode(1, node2, node3);
 
-        BinarySearchTree.inorder(root);
+        LevelOrderTraversal.levelOrderTraversal(root);
 
-        final BinaryTreeNode mirror = BinarySearchTree.mirror(root);
-
-        System.out.println("Mirror");
-        BinarySearchTree.inorder(mirror);
     }
+
 }
