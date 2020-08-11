@@ -76,7 +76,7 @@ public class HouseRobberIII {
 
     public int rob(BinaryTreeNode root) {
 
-        final ArrayList<ArrayList<Integer>> result = LevelOrderTraversal.levelOrderTraversal(root);
+        final List<ArrayList<Integer>> result = LevelOrderTraversal.levelOrderTraversal(root);
 
         AtomicInteger index = new AtomicInteger();
         final List<LevelInfo> levelInfos = result

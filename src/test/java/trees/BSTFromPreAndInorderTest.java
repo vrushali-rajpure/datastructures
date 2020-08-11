@@ -16,6 +16,6 @@ public class BSTFromPreAndInorderTest {
         final int[] inOrder = {4, 2, 5, 1, 6, 3};
         final BinaryTreeNode node = BSTFromPreAndInorder.constructTreeFromPreAndInorderExpression(preOrder, inOrder);
 
-        BinarySearchTree.levelOrderTraversal(node);
+        LevelOrderTraversal.levelOrderTraversal(node);
     }
 }

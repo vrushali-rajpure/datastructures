@@ -2,11 +2,17 @@ package trees;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
+
+import static java.util.Collections.emptyList;
 
 public class LevelOrderTraversal {
 
-    public static ArrayList<ArrayList<Integer>> levelOrderTraversal(BinaryTreeNode root) {
+    public static List<ArrayList<Integer>> levelOrderTraversal(BinaryTreeNode root) {
+        if (root == null) {
+            return emptyList();
+        }
         Queue<BinaryTreeNode> queue = new LinkedList<>();
         queue.offer(root);
         queue.offer(null);

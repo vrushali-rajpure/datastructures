@@ -17,7 +17,7 @@ public class BSTFromPostAndInorderTest {
         final int[] inOrder = {4, 2, 5, 1, 6, 3};
         final BinaryTreeNode node = BSTFromPostAndInorder.constructTreeFromPostAndInorderExpression(postOrder, inOrder);
 
-        BinarySearchTree.levelOrderTraversal(node);
+        LevelOrderTraversal.levelOrderTraversal(node);
     }
 
 }

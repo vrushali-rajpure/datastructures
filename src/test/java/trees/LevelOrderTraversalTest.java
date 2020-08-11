@@ -17,4 +17,9 @@ public class LevelOrderTraversalTest {
 
     }
 
+    @Test
+    public void testNullRoot() {
+
+        LevelOrderTraversal.levelOrderTraversal(null);
+    }
 }
