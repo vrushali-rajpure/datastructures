@@ -56,7 +56,7 @@ class Node {
 public class MaxDepthNArrayTree {
 
     public static int maxDepth(Node root) {
-        System.out.println(root);
+        System.out.println("root" + root);
         if (root == null) {
             return 0;
         }
@@ -65,7 +65,9 @@ public class MaxDepthNArrayTree {
         }
         List<Integer> heights = new LinkedList<>();
         for (Node item : root.children) {
+            System.out.println("Before :" + heights + ", item :" + item);
             heights.add(maxDepth(item));
+            System.out.println("after :" + heights + ", item :" + item);
         }
         return Collections.max(heights) + 1;
     }
