@@ -3,6 +3,7 @@ package graphs;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Queue;
 
 /**
  * Time complexity: O(V + E), where V is the number of vertices and E is the number of edges in the graph.
@@ -47,5 +48,43 @@ class Graph {
                 dfsUtil(next, visited);
             }
         }
+    }
+
+    void bfs(int vertex) {
+        Queue<Integer> queue = new LinkedList<>();
+        boolean[] visited = new boolean[vertexCount];
+        queue.add(vertex);
+        visited[vertex] = true;
+
+        while(! queue.isEmpty()) {
+            final Integer poll = queue.poll();
+            System.out.print(poll+" ");
+            final ListIterator<Integer> iterator = adj[poll].listIterator();
+
+            while (iterator.hasNext()) {
+                final Integer next = iterator.next();
+                if( !visited[next]) {
+                    visited[next] = true;
+                    queue.add(next);
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        Graph g = new Graph(4);
+
+        g.addEdge(0, 1);
+        g.addEdge(0, 2);
+        g.addEdge(1, 2);
+        g.addEdge(2, 0);
+        g.addEdge(2, 3);
+        g.addEdge(3, 3);
+
+        System.out.println("Following is Breadth First Traversal "+
+            "(starting from vertex 2)");
+
+        g.bfs(2);
     }
 }
