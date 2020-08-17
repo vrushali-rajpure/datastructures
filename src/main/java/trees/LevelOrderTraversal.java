@@ -39,7 +39,6 @@ public class LevelOrderTraversal {
             }
         }
 
-        System.out.println(result);
 
         return result;
     }

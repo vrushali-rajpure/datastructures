@@ -1,8 +1,8 @@
 package trees;
 
 public class BinaryTreeNode {
-    int data;
-    BinaryTreeNode left, right;
+    public int data;
+    public BinaryTreeNode left, right;
 
     public BinaryTreeNode(int data, BinaryTreeNode left, BinaryTreeNode right) {
         this.data = data;
@@ -20,4 +20,21 @@ public class BinaryTreeNode {
             '}';
     }
 
+    public BinaryTreeNode getLeft() {
+        return left;
+    }
+
+    public BinaryTreeNode getRight() {
+        return right;
+    }
+
+    public BinaryTreeNode setLeft(BinaryTreeNode left) {
+        this.left = left;
+        return this;
+    }
+
+    public BinaryTreeNode setRight(BinaryTreeNode right) {
+        this.right = right;
+        return this;
+    }
 }
