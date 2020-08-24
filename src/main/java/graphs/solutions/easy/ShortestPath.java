@@ -3,8 +3,6 @@ package graphs.solutions.easy;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.ListIterator;
-import java.util.Queue;
 
 public class ShortestPath {
     public static void main(String[] args) {
@@ -16,29 +14,29 @@ public class ShortestPath {
     }
 
     public int shortestPathLength(int[][] graph) {
-        final List<Integer>[] adj = createAdj(graph);
-        Queue<Integer> queue = new LinkedList<>();
-        final int start = 0;
-        queue.add(start);
-
+//        final List<Integer>[] adj = createAdj(graph);
+//        Queue<Integer> queue = new LinkedList<>();
+//        final int start = 0;
+//        queue.add(start);
+//
 //        int[] distance = new int[graph.length];
 //        int[] path
 //        for (int i = 0; i < graph.length; i++) {
 //            distance[i] = -1;
 //        }
-
-        distance[start] = 0;
-        while (!queue.isEmpty()) {
-            final Integer vertex = queue.poll();
-            final ListIterator<Integer> adjVertex = adj[vertex].listIterator();
-            while ( adjVertex.hasNext()) {
-                final Integer next = adjVertex.next();
-                if( distance[next] == -1){
-                    distance[next] = distance[vertex] + 1;
-                }
-            }
-        }
-
+//
+//        distance[start] = 0;
+//        while (!queue.isEmpty()) {
+//            final Integer vertex = queue.poll();
+//            final ListIterator<Integer> adjVertex = adj[vertex].listIterator();
+//            while ( adjVertex.hasNext()) {
+//                final Integer next = adjVertex.next();
+//                if( distance[next] == -1){
+//                    distance[next] = distance[vertex] + 1;
+//                }
+//            }
+//        }
+//
         return 0;
 
     }

@@ -1,5 +1,6 @@
 package trees;
 
+import java.util.Stack;
 import org.junit.Test;
 
 public class BinarySearchTreeTest {

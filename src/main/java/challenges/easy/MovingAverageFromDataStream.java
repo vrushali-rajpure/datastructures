@@ -25,7 +25,7 @@ class MovingAverage {
     Space Complexity: O(M), where M is the length of the queue which would grow at each invocation of the next(val) function.
     */
     int windowSize;
-    List<Integer> queue = new ArrayList<>();
+    List<Integer> list = new ArrayList<>();
 
     /** Initialize your data structure here. */
     public MovingAverage(int size) {
@@ -33,12 +33,12 @@ class MovingAverage {
     }
 
     public double next(int val) {
-        queue.add(val);
+        list.add(val);
         int sum = 0;
-        for (int i = Math.max(0, queue.size() - windowSize); i < queue.size(); i++) {
-            sum += queue.get(i);
+        for (int i = Math.max(0, list.size() - windowSize); i < list.size(); i++) {
+            sum += list.get(i);
         }
-        return sum * 1.0 / Math.min(queue.size(), windowSize);
+        return sum * 1.0 / Math.min(list.size(), windowSize);
     }
 
     public static void main(String[] args) {

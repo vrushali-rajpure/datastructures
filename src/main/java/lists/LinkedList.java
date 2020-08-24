@@ -1,8 +1,11 @@
 package lists;
 
+import java.util.HashMap;
+import java.util.Map;
+
 class ListNode {
-    private int data;
-    private ListNode next;
+    int data;
+    ListNode next;
 
     public ListNode(int data) {
         this.data = data;
@@ -30,7 +33,7 @@ class ListNode {
 }
 
 public class LinkedList {
-    private ListNode headNode;
+    ListNode headNode;
     private int length;
 
     public LinkedList() {
@@ -147,18 +150,18 @@ public class LinkedList {
     }
 
     ListNode remove(int position) {
-        if( position < 0) {
+        if (position < 0) {
             position = 0;
         }
-        if( position > length) {
+        if (position > length) {
             position = length - 1;
         }
 
-        if( headNode == null) {
+        if (headNode == null) {
             return null;
         }
 
-        if( position == 0) {
+        if (position == 0) {
             return removeFirst();
         } else {
             length--;
@@ -181,22 +184,38 @@ public class LinkedList {
 
     ListNode nthFromLast(int nthNode) {
         ListNode pTemp = headNode, pthNthNode = null;
-        for(int index = 1; index < nthNode; index++){
+        for (int index = 1; index < nthNode; index++) {
             pTemp = pTemp.getNext();
         }
 
         while (pTemp != null) {
-            if( pthNthNode == null) {
+            if (pthNthNode == null) {
                 pthNthNode = headNode;
             } else {
                 pthNthNode = pthNthNode.getNext();
             }
             pTemp = pTemp.getNext();
         }
-        if( pthNthNode != null) {
+        if (pthNthNode != null) {
             return pthNthNode;
         }
+
+        Map<Integer, Integer> map = new HashMap<>();
+
         return null;
+    }
+
+    ListNode reverse() {
+
+        ListNode current = headNode;
+        ListNode previous = null;
+        while (current != null) {
+            ListNode next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        return previous;
     }
 
 }

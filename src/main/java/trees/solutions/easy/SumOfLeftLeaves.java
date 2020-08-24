@@ -29,7 +29,7 @@ public class SumOfLeftLeaves {
         if (root.left == null && root.right == null) {
             return isLeft ? root.data : 0;
         }
-        return leftSum(root.left,true) + leftSum(root.right,false);
+        return leftSum(root.left, true) + leftSum(root.right, false);
     }
 
 }

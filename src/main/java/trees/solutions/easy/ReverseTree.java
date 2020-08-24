@@ -1,14 +1,6 @@
 package trees.solutions.easy;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Objects;
-import java.util.function.BinaryOperator;
-import java.util.stream.Collectors;
-import trees.BinarySearchTree;
 import trees.BinaryTreeNode;
-import trees.LevelOrderTraversal;
 
 public class ReverseTree {
 

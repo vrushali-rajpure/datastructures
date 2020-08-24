@@ -29,4 +29,15 @@ public class LinkedListTest {
         final ListNode node = list.nthFromLast(2);
         System.out.println(node);
     }
+
+    @Test
+    public void reverse() {
+        LinkedList list = new LinkedList();
+        list.insertAtStart(10);
+        list.insertAtEnd(20);
+        list.insertAtEnd(30);
+
+        System.out.println(list);
+        System.out.println(list.reverse());
+    }
 }

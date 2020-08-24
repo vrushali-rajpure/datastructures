@@ -39,7 +39,27 @@ public class LevelOrderTraversal {
             }
         }
 
-
         return result;
     }
+
+    public static void levelOrder(BinaryTreeNode root) {
+        if (root == null) {
+            System.out.println("Please enter a valid tree!");
+            return;
+        }
+        Queue<BinaryTreeNode> queue = new LinkedList<BinaryTreeNode>();
+        queue.offer(root);
+        System.out.println();
+        while (queue.size() > 0) {
+            root = queue.poll();
+            System.out.print(root.data + " ");
+            if (root.left != null) {
+                queue.add(root.left);
+            }
+            if (root.right != null) {
+                queue.add(root.right);
+            }
+        }
+    }
+
 }
