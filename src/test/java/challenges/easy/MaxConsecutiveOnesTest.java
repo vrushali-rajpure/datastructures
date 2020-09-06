@@ -1,5 +1,6 @@
 package challenges.easy;
 
+import arrays.easy.MaxConsecutiveOnes;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
