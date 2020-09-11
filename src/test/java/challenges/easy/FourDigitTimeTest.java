@@ -1,6 +1,7 @@
 package challenges.easy;
 
 import org.junit.Test;
+import strings.FourDigitTime;
 
 public class FourDigitTimeTest {
 
