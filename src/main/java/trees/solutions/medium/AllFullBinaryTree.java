@@ -8,8 +8,8 @@ import trees.BinaryTreeNode;
 
 public class AllFullBinaryTree {
 
-    public List<BinaryTreeNode> allPossibleFBT(int N) {
-        System.out.println("N:" + N);
+    public List<BinaryTreeNode> allPossibleFBT(int N,String n) {
+        System.out.println("input N:" + N + "...n:" + n);
         Map<Integer, List<BinaryTreeNode>> memo = new HashMap<>();
         if (!memo.containsKey(N)) {
             List<BinaryTreeNode> ans = new LinkedList<>();
@@ -21,8 +21,8 @@ public class AllFullBinaryTree {
                     int y = N - 1 - x;
                     System.out.println("Y:" + y);
 
-                    for (BinaryTreeNode left : allPossibleFBT(x))
-                        for (BinaryTreeNode right : allPossibleFBT(y)) {
+                    for (BinaryTreeNode left : allPossibleFBT(x,"left"))
+                        for (BinaryTreeNode right : allPossibleFBT(y,"right")) {
                             BinaryTreeNode bns = new BinaryTreeNode(0);
                             bns.left = left;
                             bns.right = right;
@@ -31,7 +31,7 @@ public class AllFullBinaryTree {
                 }
             }
             memo.put(N, ans);
-            System.out.println(memo);
+            System.out.println("memo :" + memo);
             System.out.println(" ");
         }
 

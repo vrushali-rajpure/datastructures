@@ -30,7 +30,7 @@ public class AllFullBinaryTreeTest {
     @Test
     public void allPossibleFBT() {
         AllFullBinaryTree tree = new AllFullBinaryTree();
-        final List<BinaryTreeNode> nodes = tree.allPossibleFBT(7);
+        final List<BinaryTreeNode> nodes = tree.allPossibleFBT(7,"");
         assertEquals(5,nodes.size());
     }
 }
