@@ -19,17 +19,17 @@ public class ShortestWordDistance {
 
         int i1 = -1, i2 = -1;
         int minDistance = words.length;
-        for(int i = 0 ; i < words.length; i++) {
-            if(words[i].equals(word1))
+        for (int i = 0; i < words.length; i++) {
+            if (words[i].equals(word1))
                 i1 = i;
 
-            if(words[i].equals(word1))
+            if (words[i].equals(word1))
                 i2 = i;
 
-            if( i1 != -1 && i2 != -1){
-                minDistance = Math.min(minDistance,Math.abs(i1-i2));
+            if (i1 != -1 && i2 != -1) {
+                minDistance = Math.min(minDistance, Math.abs(i1 - i2));
             }
-
+            
         }
         return minDistance;
     }

@@ -82,6 +82,9 @@ class MovingAverageWithDeque {
         System.out.println(average.next(10));
         System.out.println(average.next(3));
         System.out.println(average.next(5));
+
+        System.out.println("--------");
+        System.out.println(1 - 3 + 4);
     }
 }
 

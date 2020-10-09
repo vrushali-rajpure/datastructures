@@ -91,8 +91,8 @@ public class RemoveOuterMostParentheses {
     public static void main(String[] args) {
         System.out.println(Objects.equals(removeOuterParentheses("(()())(())(()(()))"), "()()()()(())"));
         System.out.println(Objects.equals(removeOuterParentheses("()()"), ""));
-        System.out.println(Objects.equals(removeOuterParenthesesAlternate("(()())(())"), "()()()"));
-        System.out.println(Objects.equals(removeOuterParenthesesAlternate("(()())(())(()(()))"), "()()()()(())"));
-        System.out.println(Objects.equals(removeOuterParenthesesAlternate("()()"), ""));
+//        System.out.println(Objects.equals(removeOuterParenthesesAlternate("(()())(())"), "()()()"));
+//        System.out.println(Objects.equals(removeOuterParenthesesAlternate("(()())(())(()(()))"), "()()()()(())"));
+//        System.out.println(Objects.equals(removeOuterParenthesesAlternate("()()"), ""));
     }
 }

@@ -39,7 +39,7 @@ class CountAndSay {
             System.out.println("digit:" + digit);
             System.out.println("digitCnt:" + digitCnt);
             System.out.println("nextSeq:" + nextSeq);
-            System.out.println("----");
+
             if (prevDigit == null) {
                 prevDigit = digit;
                 digitCnt += 1;
@@ -55,6 +55,8 @@ class CountAndSay {
                 prevDigit = digit;
                 digitCnt = 1;
             }
+
+            System.out.println("----");
         }
 
         // add the delimiter for the next recursion

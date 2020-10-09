@@ -52,4 +52,19 @@ public class FindInUnknownSize {
         // there is no target element
         return -1;
     }
+
+    public static void main(String[] args) {
+        int right = 1;
+
+        System.out.println(right <<= 1);
+
+        int four = 4;
+        System.out.println(four <<= 1);
+
+        int pivot =    1 + ((5 - 1) >> 1);;
+
+        System.out.println(pivot);
+
+
+    }
 }
